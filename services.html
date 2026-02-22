@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Services and Solutions by Mifumo Developers Lab. Smart software, AI, Data Analytics, Networking, and Automation.">
+    <title>Services | Mifumo Developers Lab</title>
+    <style>
+        /* Shared CSS */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-color: #4a4a4a;
+            --accent-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--primary-color);
+        }
+
+        /* Page Layout */
+        main {
+            flex: 1;
+            padding: 8rem 5% 4rem;
+            max-width: 1200px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Services Detailed Layout */
+        .service-detail-block {
+            display: flex;
+            flex-wrap: wrap;
+            background: var(--white);
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            border-left: 5px solid var(--primary-color);
+        }
+
+        .service-content {
+            padding: 3rem;
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .service-content h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-content p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .service-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-features div {
+            background: var(--light-bg);
+            padding: 1rem;
+            border-radius: 5px;
+            font-weight: 500;
+            color: var(--secondary-color);
+            border-left: 3px solid var(--primary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0.5rem 1rem;
+            }
+            .service-content {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mifumo Developers Lab</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="about.html">About & News</a></li>
+                <li><a href="index.html#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Our Services & Solutions</h1>
+            <p>From intelligent algorithms to robust physical infrastructure, we provide end-to-end technical solutions engineered for your specific organizational needs.</p>
+        </div>
+
+        <div class="service-detail-block">
+            <div class="service-content">
+                <h2>Artificial Intelligence & Smart Software</h2>
+                <p>We build sophisticated web, desktop, and mobile applications powered by modern technology stacks. Going beyond standard software, we integrate AI models to optimize data interpretation and automate workflows.</p>
+                <p>Our solutions include specialized models for detecting financial anomalies and mobile money fraud, alongside advanced natural language processing tools capable of analyzing text, voice, and images for both public and private sectors.</p>
+                <div class="service-features">
+                    <div>Fraud Detection AI</div>
+                    <div>NLP & Voice Analysis</div>
+                    <div>Custom Enterprise Apps</div>
+                    <div>Machine Vision Systems</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-detail-block">
+            <div class="service-content">
+                <h2>Advanced Data Analytics</h2>
+                <p>We help organizations leverage massive datasets to convert raw metrics into actionable, strategic insights. Our automated data pipelines ensure you have the reporting necessary to make rapid business decisions.</p>
+                <p>We specialize in building robust models for predictive analytics, such as forecasting demographic trends and predicting large-scale population data (like school enrollment mapping) to aid in long-term organizational and national planning.</p>
+                <div class="service-features">
+                    <div>Predictive Modeling</div>
+                    <div>Automated Pipelines</div>
+                    <div>Real-time Dashboards</div>
+                    <div>Demographic Forecasting</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-detail-block">
+            <div class="service-content">
+                <h2>Industrial & Precision Automation</h2>
+                <p>We bridge the gap between software and the physical world. Our automation services are designed to maximize efficiency across various demanding environments.</p>
+                <p>We deploy industrial control systems and IoT sensors to optimize manufacturing production lines, while also advancing precision agriculture through smart electronic monitoring systems that maximize yield and resource efficiency.</p>
+                <div class="service-features">
+                    <div>Precision Agriculture IoT</div>
+                    <div>Manufacturing Control</div>
+                    <div>Building Automation (HVAC)</div>
+                    <div>Remote Sensor Monitoring</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-detail-block">
+            <div class="service-content">
+                <h2>IT Infrastructure & Networking</h2>
+                <p>The foundation of any digital transformation is reliable infrastructure. We design, deploy, and manage scalable networking environments tailored for enterprise demands.</p>
+                <p>Our offerings provide end-to-end solutions for data centre operations, including physical server provisioning, secure network architecture, active monitoring, and ongoing server management to ensure absolute uptime.</p>
+                <div class="service-features">
+                    <div>Secure Network Design</div>
+                    <div>Data Centre Operations</div>
+                    <div>Server Management</div>
+                    <div>Infrastructure Scalability</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mifumo Developers Lab. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Auto-update Copyright Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // 2. Scroll Reveal Animation for Service Blocks
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const blocks = document.querySelectorAll('.service-detail-block');
+            blocks.forEach((block, index) => {
+                // Add a slight stagger to the initial load if they are visible
+                setTimeout(() => {
+                    observer.observe(block);
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
