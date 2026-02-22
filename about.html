@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Mifumo Developers Lab - R&D, Machine Vision, AI, Networking, and Automation for African settings.">
+    <title>About Us | Mifumo Developers Lab</title>
+    <style>
+        /* Shared CSS */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-color: #4a4a4a;
+            --accent-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--primary-color);
+        }
+
+        /* Page Layout */
+        main {
+            flex: 1;
+            padding: 8rem 5% 4rem;
+            max-width: 1000px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        /* Content Blocks */
+        .content-card {
+            background: var(--white);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+            border-left: 5px solid var(--primary-color);
+            opacity: 0; 
+            transform: translateY(20px); 
+        }
+
+        .content-card h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .content-card p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-list {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-list strong {
+            color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0.5rem 1rem;
+            }
+            .content-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mifumo Developers Lab</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="about.html" class="active">About & News</a></li>
+                <li><a href="index.html#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>About Mifumo Developers Lab</h1>
+            <p>Pioneering modern tech, automation, and infrastructure solutions for the most challenging problems.</p>
+        </div>
+
+        <section class="content-card">
+            <h2>Our Core Mission</h2>
+            <p>At Mifumo Developers Lab, we believe that technology should be smart, intuitive, and perfectly tailored to the environment it serves. We are dedicated to delivering comprehensive digital transformation, from intelligent software applications to robust physical infrastructure.</p>
+            <p>Our team uses advanced engineering techniques with mutual synergy to deliver systems that drive real optimization for your organization, utilizing a customer-first strategy across all our verticals.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>Infrastructure & Automation</h2>
+            <p>Beyond software, we engineer the physical and network environments that power modern businesses. We design, deploy, and manage scalable systems to ensure operational efficiency and reliability.</p>
+            <ul class="feature-list">
+                <li><strong>Computer Networking:</strong> Designing and implementing secure, high-performance network architectures tailored for enterprise needs.</li>
+                <li><strong>Building Automation:</strong> Integrating smart technologies to manage lighting, HVAC, security, and energy efficiency in modern facilities.</li>
+                <li><strong>Manufacturing Industry Automation:</strong> Deploying industrial control systems and IoT sensors to optimize production lines and minimize downtime.</li>
+                <li><strong>Data Centres & Server Management:</strong> Providing end-to-end solutions for data center infrastructure, including server provisioning, configuration, monitoring, and ongoing maintenance.</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>Research & Development (R&D)</h2>
+            <p>R&D is at the core heart of our business process. We don't just use existing technologies; we actively research modern technologies and optimize them specifically for African settings.</p>
+            <p>We work extensively with both public and private sectors that demand cutting-edge technology to solve difficult, real-world problems.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>AI & Machine Vision Initiatives</h2>
+            <p>We are currently undertaking deep exploration into new computing paradigms. Our active research and development areas include:</p>
+            <ul class="feature-list">
+                <li><strong>Machine Vision Technologies:</strong> Developing visual AI models suited for local industry applications, quality control, and automated monitoring.</li>
+                <li><strong>Natural Language Understanding:</strong> Creating specialized models for Swahili speakers to bridge the gap in digital communication and data processing.</li>
+                <li><strong>Automated Data Analytics:</strong> Leveraging data to convert raw business metrics into actionable, strategic insights for faster decision-making.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mifumo Developers Lab. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Auto-update Copyright Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // 2. Simple Fade-in Animation for Content Cards
+            const cards = document.querySelectorAll('.content-card');
+            
+            // Adding a slight stagger effect
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 150 * index); // 150ms delay between each card animating in
+            });
+        });
+    </script>
+</body>
+</html>
