@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest news, research updates, and project launches from Mifumo Developers Lab.">
+    <title>News & Updates | Mifumo Developers Lab</title>
+    <style>
+        /* Shared CSS */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-color: #4a4a4a;
+            --accent-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--primary-color);
+        }
+
+        /* Page Layout */
+        main {
+            flex: 1;
+            padding: 8rem 5% 4rem;
+            max-width: 1000px;
+            margin: auto;
+            width: 100%;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        /* News Feed Layout */
+        .news-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .news-article {
+            background: var(--white);
+            border-radius: 10px;
+            padding: 2.5rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .news-article:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .news-date {
+            display: inline-block;
+            background: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .news-article h2 {
+            color: var(--secondary-color);
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .news-article p {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+        }
+
+        .news-article a.read-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .news-article a.read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0.5rem 1rem;
+            }
+            .news-article {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mifumo Developers Lab</a>
+            <ul id="main-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html" class="active">News</a></li>
+                <li><a href="index.html#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Latest News & Research</h1>
+            <p>Updates on our projects, deployments, and academic breakthroughs.</p>
+        </div>
+
+        <div class="news-grid">
+            
+            <article class="news-article">
+                <span class="news-date">February 2026</span>
+                <h2>Development of the SUA-MEIS Project</h2>
+                <p>We are proud to be actively involved in the development of the Sokoine University of Agriculture Monitoring and Evaluation Information System (SUA-MEIS). This comprehensive software solution is designed to track organizational metrics and ensure stringent quality and performance standards are met across academic and administrative departments.</p>
+            </article>
+
+            <article class="news-article">
+                <span class="news-date">February 2026</span>
+                <h2>Predictive Modeling for School Enrollment in Tanzania</h2>
+                <p>Our data analytics team recently concluded work on a high-impact predictive modeling project aimed at forecasting school enrollment data across Tanzania. By applying advanced statistical modeling to demographic data, we are helping to provide actionable insights for national infrastructure and educational planning.</p>
+            </article>
+
+            <article class="news-article">
+                <span class="news-date">January 2026</span>
+                <h2>Launch of "LindaPesa" AI Concept</h2>
+                <p>We are thrilled to announce our latest AI initiative: LindaPesa. This concept utilizes advanced machine learning algorithms to detect and prevent mobile money fraud in real-time. Designed specifically for the Tanzanian market, LindaPesa aims to secure digital financial transactions and protect consumers from emerging cyber threats.</p>
+            </article>
+
+            <article class="news-article">
+                <span class="news-date">January 2026</span>
+                <h2>New Research Publication on the Mindu Reservoir</h2>
+                <p>In our ongoing commitment to R&D and environmental sustainability, our team has co-authored a new research paper alongside Mr. Dickson Massawe. The research focuses on the Mindu Reservoir, applying modern data analysis techniques to study local ecological and water management challenges in Morogoro.</p>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mifumo Developers Lab. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Auto-update Copyright Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // 2. Scroll Reveal Animation for News Articles
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -20px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const articles = document.querySelectorAll('.news-article');
+            articles.forEach((article, index) => {
+                setTimeout(() => {
+                    observer.observe(article);
+                }, index * 100); // Stagger the animation slightly
+            });
+        });
+    </script>
+</body>
+</html>
