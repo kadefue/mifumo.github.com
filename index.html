@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mifumo Developers Lab - Your Digital Transformation, AI, and Automation Partner">
+    <title>Mifumo Developers Lab</title>
+    <style>
+        /* Shared CSS */
+        :root {
+            --primary-color: #0056b3;
+            --secondary-color: #2c3e50;
+            --light-bg: #f8f9fa;
+            --white: #ffffff;
+            --text-color: #4a4a4a;
+            --accent-color: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--white);
+        }
+
+        /* Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--secondary-color);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover, nav ul li a.active {
+            color: var(--primary-color);
+        }
+
+        /* Sections */
+        section {
+            padding: 6rem 5% 4rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 10rem 5% 6rem;
+            background: linear-gradient(135deg, var(--light-bg) 0%, #e9ecef 100%);
+            border-bottom: 1px solid #ddd;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .hero h1 span {
+            color: var(--primary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Services Grid */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--secondary-color);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #004494;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Contacts */
+        .contact-container {
+            background: var(--light-bg);
+            padding: 3rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-container p {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem 5%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0.5rem 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Mifumo Developers Lab</a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Your Digital Transformation <br><span>and Optimization Partner</span></h1>
+        <p>We develop modern software, implement cutting-edge AI, and deploy robust physical infrastructure to make your great ideas real.</p>
+    </section>
+
+    <section id="services-preview">
+        <h2 class="section-title">Our Capabilities</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Smart Software</h3>
+                <p>We develop web, desktop, and mobile applications using modern technologies. We utilize advanced software engineering techniques with a customer-first strategy to deliver top-tier systems.</p>
+            </div>
+            <div class="service-card">
+                <h3>Data Analytics</h3>
+                <p>Convert your raw business data into actionable insights. We provide automated data analytics to optimize your data and processes, offering regular or one-time analytical reporting.</p>
+            </div>
+            <div class="service-card">
+                <h3>AI Solutions</h3>
+                <p>We integrate AI models to optimize data interpretation and deliver clear business inferences. Our AI tools analyze texts, voices, and images to streamline workflows for public and private sectors.</p>
+            </div>
+            <div class="service-card">
+                <h3>IT Infrastructure & Networking</h3>
+                <p>We design and implement secure, high-performance computer networks. Our end-to-end data centre solutions include server provisioning, configuration, monitoring, and ongoing management.</p>
+            </div>
+            <div class="service-card">
+                <h3>Industrial & Building Automation</h3>
+                <p>Integrate smart technologies to manage facilities, alongside deploying industrial control systems and IoT sensors to optimize manufacturing production lines.</p>
+            </div>
+            <div class="service-card">
+                <h3>R&D & Machine Vision</h3>
+                <p>R&D is the core of our business. We actively research modern technologies and optimize them for local settings, focusing on Machine Vision and Natural Language Understanding.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="services.html" class="btn">View Detailed Services</a>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+            <p><strong>Email:</strong> info@mifumo.dev | <strong>CEO:</strong> ceo@mifumo.dev</p>
+            <p><strong>Address:</strong> Kola Block A Plot 69 Morogoro, Tanzania</p>
+            <p><strong>Phone:</strong> 0628 021 065</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Mifumo Developers Lab. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Auto-update Copyright Year
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // 2. Smooth Scrolling for Navigation (only for hash links like #contacts)
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return; // Skip empty hashes
+
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        e.preventDefault();
+                        const headerOffset = 80;
+                        const elementPosition = targetSection.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // 3. Scroll Reveal Animation for Service Cards
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const cards = document.querySelectorAll('.service-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+</html>
